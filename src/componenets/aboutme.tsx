@@ -46,7 +46,7 @@ I also work as a web developer, creating functional and impactful solutions.
              </div>
       </div> 
       <div className='aboutmeParagraphContainer'>
-         <h3 id='aboutme'>About Me</h3>
+         <h3 id='aboutme'>About Me <a href="#home"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width={30} height={30} className="uparrow" ><path d="M342.6 73.4C330.1 60.9 309.8 60.9 297.3 73.4L137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7C149.8 291.2 170.1 291.2 182.6 278.7L288 173.3L288 544C288 561.7 302.3 576 320 576C337.7 576 352 561.7 352 544L352 173.3L457.4 278.7C469.9 291.2 490.2 291.2 502.7 278.7C515.2 266.2 515.2 245.9 502.7 233.4L342.7 73.4z"/></svg></a></h3>
         <div className='aboutmeParagraph'>
            
         <p>

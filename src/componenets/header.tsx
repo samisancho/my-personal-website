@@ -5,7 +5,7 @@ const header = () => {
   return (
     <>
         <div className='Appheader'>
-            <div className='AuthorName'>
+            <div className='AuthorName' id="home">
                 <a href="">Samuel Daba</a>
             </div>
             <div className='mymenubar'>
@@ -20,7 +20,7 @@ const header = () => {
                 </ul>
             </div>
             <div className='contact'>
-                <button className='btn btn-primary'>Contact</button>
+                <a className='btn btn-primary' href="#contactme">Contact</a>
             </div>
         </div>
     </>
