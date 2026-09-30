@@ -62,6 +62,19 @@
 html {
 scroll-behavior: smooth;
 }
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
 .AppContainer {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -75,6 +88,28 @@ scroll-behavior: smooth;
   align-items: center;
   padding: 1rem;
   text-align: center;
+}
+.Appheader {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .Appheader {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .Appheader ul {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .Appheader li {
+    margin: 0;
+  }
 }
 .Appheader ul {
   list-style-type: none;
@@ -241,6 +276,20 @@ scroll-behavior: smooth;
 .footerContact .socialMedia a{
   font-size: 2rem;
 }
+@media (max-width: 768px) {
+.Appfooter {
+grid-template-columns: 1fr;
+text-align: center;
+}
+ 
+.Appfooter p {
+grid-column: auto;
+}
+ 
+.footerInfo {
+padding-left: 0;
+}
+}
 .aboutme{
   display: flex;
   flex-direction: row;
@@ -300,6 +349,18 @@ scroll-behavior: smooth;
   font-variant: small-caps;
   color: #adacacd2;
 }
+
+@media (max-width: 768px) {
+  .aboutmeBottom {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutmeBottom .skills {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
 .aboutmeParagraph{
   background-color: #202129;
   border-radius: 1.5rem;
@@ -321,6 +382,17 @@ scroll-behavior: smooth;
   text-align: center;
   font-family: 'Lucida Calligraphy', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 1.5rem;
+} 
+
+@media (max-width: 768px) {
+  .aboutme {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutme .aboutmeInfo {
+    padding: 0;
+  }
 }
 .contactContainer{
   padding: 2rem;
@@ -409,17 +481,26 @@ form label {
   border-radius: 1rem;
   justify-self: center;
 }
+@media (max-width: 768px) {
+.contactme {
+grid-template-columns: 1fr;
+}
+ 
+form {
+justify-self: center;
+}
+}
+
 .skillsContainer{
   margin: 5rem;
 }
 .mySkillsContainer{
   display: grid;
-  grid-template-columns: auto auto auto;
-  justify-self: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
   gap: 1.5rem;
 }
 .skillBoxContainer,.serviceBoxContainer{
-  width: 22rem;
+  width: 100%;
   background-color: #20232be1;
   border-radius: 1rem;
   padding: 0.5rem;
@@ -533,6 +614,30 @@ form label {
     #8b5cf6,
     #ec4899
   );
+}
+.experience-item {
+  width: 100%;
+  max-width: 700px;
+}
+
+.timeline-arrow {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .experience-item {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .experience-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .experience-item h4 {
+    font-size: 0.9rem;
+  }
 }
 
 .experience-item {
