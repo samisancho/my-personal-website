@@ -9,20 +9,18 @@ const contactme = () => {
         <div className='contactme'>
             <h4>Have a project, role, or idea in mind? Send a message below and I'll get back to you within a day or two.</h4>
             <div>
-            
-            <form action="">
-                <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Enter Your Name"/>
-                <label htmlFor="email">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="Enter Your Email"/>
-                <label htmlFor="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required placeholder="Enter Your Subject"/>
-                <label htmlFor="message">Messages</label>
-                <textarea id="message" name="message" required placeholder="Write Your Message Here"></textarea>
-                <button type="submit" className="btn btn-primary m-3 align-content-center">Send Message</button>
-            </form>
+                <form action="">
+                    <label htmlFor="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter Your Name"/>
+                    <label htmlFor="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter Your Email"/>
+                    <label htmlFor="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Enter Your Subject"/>
+                    <label htmlFor="message">Messages</label>
+                    <textarea id="message" name="message" required placeholder="Write Your Message Here"></textarea>
+                    <button type="submit" className="btn btn-primary m-3 align-content-center">Send Message</button>
+                </form>
             </div>
-           
             <div className='contactDetails'>
                  <p>Feel free to reach out to me via email or connect with me on social media.</p>
                 <a href="mailto:samueldaba@example.com" className="flex align-items-center gap-2">

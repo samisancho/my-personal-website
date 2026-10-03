@@ -798,3 +798,454 @@ justify-self: center;
   border-top: 12px solid #8b5cf6;
   filter: drop-shadow(0 0 8px #8b5cf6);
 }
+
+@media (max-width: 1100px) {
+  .Appheader {
+    grid-template-columns: 1fr auto;
+    row-gap: 1rem;
+  }
+
+  .Appheader .mymenubar {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .Appheader .contact {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  .Appheader ul {
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+  }
+
+  .Appheader li {
+    margin: 0;
+  }
+
+  .aboutme {
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .aboutme .aboutmeImg {
+    padding: 1rem;
+  }
+
+  .aboutme .aboutmeInfo {
+    padding: 0 1rem;
+  }
+
+  .aboutme .aboutmeInfo p {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  .aboutmeBottom {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .aboutmeBottom .skills {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .aboutmeParagraph {
+    width: min(90%, 60rem);
+  }
+
+  .skillsContainer {
+    margin: 3rem 1.5rem;
+  }
+
+  .mySkillsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  }
+
+  .serviceBoxContainer {
+    width: 100%;
+  }
+
+  .experience-item {
+    position: relative !important;
+    left: auto !important;
+    width: min(100%, 700px);
+    max-width: 100%;
+    transform: none !important;
+  }
+
+  .timeline-arrow {
+    display: none;
+  }
+
+  .contactContainer {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .contactme {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .contactme > div {
+    min-width: 0;
+  }
+
+  .contactme form {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .contactme form input,
+  .contactme form textarea {
+    width: 100%;
+    margin: 0.3rem 0;
+  }
+
+  .contactDetails {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .contactDetails a {
+    margin: 0.75rem 0;
+    overflow-wrap: anywhere;
+  }
+
+  .Appfooter {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .footerInfo {
+    padding-left: 1rem;
+  }
+
+  .footerLinks ul {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .footerLinks li {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 16px;
+  }
+
+  .Appheader {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1rem 0.75rem;
+  }
+
+  .Appheader .AuthorName,
+  .Appheader .mymenubar,
+  .Appheader .contact {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .Appheader .contact {
+    justify-self: center;
+  }
+
+  .Appheader ul {
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .Appheader a {
+    display: block;
+    padding: 0.35rem 0.5rem;
+  }
+
+  .aboutme {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .aboutme img {
+    width: min(68vw, 18rem);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  .aboutme .aboutmeImg {
+    padding: 0.5rem;
+  }
+
+  .aboutme .aboutmeInfo {
+    gap: 0.25rem;
+    padding: 0;
+  }
+
+  .aboutme .aboutmeInfo p {
+    margin: 0.5rem auto;
+  }
+
+  .aboutmeBottom {
+    padding: 1rem;
+  }
+
+  .aboutmeBottom .button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .aboutmeBottom .button button {
+    margin: 0.4rem !important;
+  }
+
+  .aboutmeBottom .skills div {
+    border-right: 0;
+    text-align: center;
+  }
+
+  .aboutmeParagraphContainer h3,
+  .contactContainer h3,
+  .skillsContainer h3,
+  .experienceContantier h4,
+  .experience h4 {
+    margin: 1rem 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  .aboutmeParagraph {
+    width: calc(100% - 2rem);
+    padding: 1.25rem;
+  }
+
+  .skillsContainer {
+    margin: 2rem 1rem;
+  }
+
+  .mySkillsContainer {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .serviceBoxContainer {
+    min-width: 0;
+  }
+
+  .experience-item {
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    overflow-wrap: anywhere;
+  }
+
+  .experience-item h3 {
+    font-size: 1.15rem;
+  }
+
+  .experience-item ul {
+    padding-left: 1.1rem;
+  }
+
+  .contactContainer {
+    padding: 1rem 0.5rem;
+    margin: 1rem 0.5rem;
+  }
+
+  .contactme {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contactme h4 {
+    grid-column: auto;
+  }
+
+  .contactme form {
+    padding: 1rem;
+  }
+
+  .contactme button {
+    align-self: center;
+    margin: 0.75rem 0 0 !important;
+  }
+
+  .contactDetails {
+    padding: 1rem;
+  }
+
+  .Appfooter {
+    grid-template-columns: minmax(0, 1fr);
+    text-align: center;
+  }
+
+  .Appfooter p {
+    grid-column: auto;
+  }
+
+  .footerInfo {
+    padding: 0;
+  }
+
+  .footerContact .socialMedia {
+    flex-wrap: wrap;
+  }
+}
+
+.AppContainer .experience-item.position-absolute {
+  position: relative !important;
+  left: auto !important;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.experience-section {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+.experience-section .experience h4 {
+  text-align: center;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.experience-section .timeline {
+  height: auto;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 0 0 2.5rem;
+}
+
+.experience-section .timeline::before {
+  left: 10px;
+  top: 0;
+  height: 100%;
+}
+
+.experience-section .experience-item {
+  width: 100%;
+  max-width: none;
+  margin: 0 0 1.5rem;
+}
+
+.experience-section .experience-item::before {
+  left: calc(2.5px - 2.5rem);
+  top: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .Appheader {
+    grid-template-columns: minmax(0, 1fr) auto;
+    justify-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .Appheader .AuthorName {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .Appheader .menu-toggle {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #9c41c0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 2px;
+  }
+
+  .menu-toggle:focus-visible {
+    outline: 2px solid #aa3bff;
+    outline-offset: 3px;
+  }
+
+  .Appheader .mymenubar {
+    display: none;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+  }
+
+  .Appheader .mymenubar.is-open {
+    display: block;
+  }
+
+  .Appheader .mymenubar ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+    padding: 0.5rem 0;
+  }
+
+  .Appheader .mymenubar li a {
+    display: block;
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    border-radius: 0.5rem;
+  }
+
+  .Appheader .mymenubar li a:hover,
+  .Appheader .mymenubar li a:focus-visible {
+    background: rgba(156, 65, 192, 0.15);
+  }
+
+  .Appheader .contact {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: stretch;
+    text-align: center;
+  }
+
+  .experience-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .experience-section .timeline {
+    padding-left: 2rem;
+  }
+
+  .experience-section .timeline::before {
+    left: 8px;
+  }
+
+  .experience-section .experience-item::before {
+    left: calc(2.5px - 2rem);
+    width: 14px;
+    height: 14px;
+    top: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
